@@ -1,7 +1,7 @@
 //VARIABLES
 let punctuation = 0;
 let card = 0;
-const buttongivemeacard = document.getElementById("givemeacard");
+const buttongivemeacard = document.getElementById("takeacard");
 const buttonshowcard = document.getElementById("showcard");
 const result = document.getElementById("result");
 
@@ -28,8 +28,46 @@ function givemeacard () {
 };
 
 function showcard () {
-    
-}
+    const showingcard = (texto, estado) => {
+        let mensaje = "";
+        switch (estado) {
+        case 1 card:
+        mensaje = `El número "${texto}" es tu carta`;
+        break;
+        case 2 card:
+        mensaje = `El número "${texto}" es tu carta`;
+        break;
+        case 3 card:
+        mensaje = `El número "${texto}" es tu carta`;
+        break;
+        case 4 card:
+        mensaje = `El número "${texto}" es tu carta`;
+        break;
+        case 5 card:
+        mensaje = `El número "${texto}" es tu carta`;
+        break;
+        case 6 card:
+        mensaje = `El número "${texto}" es tu carta`;
+        break;
+        case 7 card:
+        mensaje = `El número "${texto}" es tu carta`;
+        break;
+        case 10 card:
+        mensaje = `El número "${texto}" es tu carta`;
+        break;
+        case 11 card:
+        mensaje = `El número "${texto}" es tu carta`;
+        break;
+        case 12 card:
+        mensaje = `El número "${texto}" es tu carta`;
+        break;
+        default:
+        mensaje = "Tu carta no ha podido procesarse";
+        break;
+        }
+        document.getElementById("punctuation").innerHTML = mensaje;
+       };
+};
 
 //EVENTS
 
